@@ -1,13 +1,29 @@
 name: 'Wait'
 description: 'Wait a designated number of milliseconds'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  service-url:
+    description: 'Base URL of the YouTrack service in your network environment with no trailing slash (e.g. https://youtrack.example.com)'
     required: true
-    default: '1000'
+  token:
+    description: 'Token for YouTrack API authorization'
+    required: true
+  project-id:
+    description: 'ID of YouTrack project to create the issue in'
+    required: true
+  summary:
+    description: 'Summary for the new issue'
+    required: true
+  description:
+    description: 'Description for the new issue'
+    required: false
+    default: ''
+  custom-fields:
+    description: 'Array of objects for any custom fields to apply to the issue as a JSON string'
+    required: false
+    default: '[]'
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  issue-id:
+    description: 'The ID of the created issue'
 runs:
   using: 'node16'
   main: 'dist/index.js'
