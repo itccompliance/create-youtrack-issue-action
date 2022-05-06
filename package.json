@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/itccompliance/create-youtrack-issue-action#readme",
   "dependencies": {
-    "@actions/core": "^1.7.0",
+    "@actions/core": "^1.8.0",
     "axios": "^0.27.2"
   },
   "devDependencies": {
