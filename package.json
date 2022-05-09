@@ -1,6 +1,6 @@
 {
   "name": "create-youtrack-issue-action",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Creates a new issue in a project on YouTrack via the YouTrack API",
   "main": "index.js",
   "scripts": {
