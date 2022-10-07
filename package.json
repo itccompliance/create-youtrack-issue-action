@@ -24,7 +24,7 @@
   "homepage": "https://github.com/itccompliance/create-youtrack-issue-action#readme",
   "dependencies": {
     "@actions/core": "^1.9.1",
-    "axios": "^0.27.2"
+    "axios": "^1.1.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.33.4",
